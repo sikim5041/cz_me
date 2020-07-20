@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8D597F2-D8F9-42B4-B432-90EFF48104B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cz</RootNamespace>
+    <AssemblyName>H_CZ_HELP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20053.139, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\C1.Win.C1Command.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.5.20053.230, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="coParameter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0629c82a28f3ac5, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\coParameter.dll</HintPath>
+    </Reference>
+    <Reference Include="Dass.FlexGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Dass.FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Dass.FlexGridLight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Dass.FlexGridLight.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Duzon.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon.BizOn.Erpu.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Duzon.BizOn.Erpu.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon.BizOn.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=90fc3e4f0d866603, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Duzon.BizOn.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon.ERPU, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Duzon.ERPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon.ERPU.MF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Applib\Duzon.ERPU.MF.dll</HintPath>
+    </Reference>
+    <Reference Include="Duzon.ERPU.Resource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\Duzon.ERPU.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="DzControlLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\DzControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DzHelpFormLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\DzHelpFormLib.dll</HintPath>
+    </Reference>
+    <Reference Include="INeoWeb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Applib\INeoWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HelpBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_CARD_SUB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_CARD_SUB.Designer.cs">
+      <DependentUpon>H_CZ_CARD_SUB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H_CZ_CP_SUB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_CP_SUB.Designer.cs">
+      <DependentUpon>H_CZ_CP_SUB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H_CZ_HELP01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_HELP01.Designer.cs">
+      <DependentUpon>H_CZ_HELP01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H_CZ_HELP02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_HELP02.Designer.cs">
+      <DependentUpon>H_CZ_HELP02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="H_CZ_CARD_SUB.resx">
+      <DependentUpon>H_CZ_CARD_SUB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H_CZ_CP_SUB.resx">
+      <DependentUpon>H_CZ_CP_SUB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H_CZ_HELP01.resx">
+      <DependentUpon>H_CZ_HELP01.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H_CZ_HELP02.resx">
+      <DependentUpon>H_CZ_HELP02.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H_CZ_SM_PITEM_SUB.resx">
+      <DependentUpon>H_CZ_SM_PITEM_SUB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H_CZ_PARTNER_SUB.resx">
+      <DependentUpon>H_CZ_PARTNER_SUB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="H_CZ_SM_PITEM_SUB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_SM_PITEM_SUB.Designer.cs">
+      <DependentUpon>H_CZ_SM_PITEM_SUB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H_CZ_PARTNER_SUB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H_CZ_PARTNER_SUB.Designer.cs">
+      <DependentUpon>H_CZ_PARTNER_SUB.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sub_tit_line10241.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetPath)" "D:\소스\AppLib"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
